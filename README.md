@@ -5,6 +5,7 @@
 
 # define
 
+```
 foobar
  |--docs
      |--quickstart.rst
@@ -19,3 +20,4 @@ foobar
   |--setup.py
   |--requirments.txt
   |--README.rst
+```
