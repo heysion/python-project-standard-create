@@ -2,6 +2,8 @@ import codecs
 import os
 import sys
 
+import pdb
+
 from distutils.util import convert_path
 from fnmatch import fnmatchcase
 from setuptools import setup, find_packages
@@ -57,6 +59,7 @@ def find_package_data(
     Note patterns use wildcards, or can be exact paths (including
     leading ``./``), and all searching is case-insensitive.
     """
+    pdb.set_trace()
     out = {}
     stack = [(convert_path(where), "", package, only_in_packages)]
     while stack:
@@ -130,7 +133,7 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Framework :: Django",
+        "Framework :: Python",
     ],
     zip_safe=False,
 )
