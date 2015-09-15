@@ -13,10 +13,10 @@ except :
     except:
         raise
 
-from ppsc.makedirs.ppsc_tree import PpscTree
+from ppsc.utils.ppsc_tree import PpscTree
 
 
-class TestMakedirsPpscTree(unittest.TestCase):
+class TestUtilsPpscTree(unittest.TestCase):
     def setUp(self):
         self.ppsc = PpscTree(project_name="test")
     def test_ppsc_tree_args1(self):
